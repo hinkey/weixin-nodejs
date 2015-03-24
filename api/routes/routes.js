@@ -1,7 +1,7 @@
 var wechat = require('wechat');
 var config = {
     token: 'PKTaj8f9gNrM',
-    appid: 'gh_0a3e37f05dd6',
+    appid: 'wxc671906008c8ab8a',
     encodingAESKey: 'S1ZlrQJZkJ3qM9RhVK4nBwkyMUDViPPV44b12MfxdSX'
 };
 
