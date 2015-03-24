@@ -10,18 +10,21 @@ module.exports = function (app) {
     app.use('/wechat', wechat(config, function (req, res, next) {
         // 微信输入信息都在req.weixin上
         var message = req.weixin;
-        if (message.Content === '') {
-            res.reply('start wechat');
+        if (message.Content === 'whoami') {
+            res.reply('你是猪');
+        }
+        else if (message.Content === 'whoareyou') {
+            res.reply('我是神，联系地址：我问问大地');
         }
         else if (message.Content === '1') {
             // 回复屌丝(普通回复)
-            res.reply('hehe');
+            res.reply('1个毛');
         }
         else if (message.Content === '2') {
             //你也可以这样回复text类型的信息
             res.reply({
                 content: 'text object',
-                type: 'text'
+                type: '挺2'
             });
         }
         else if (message.Content === '3') {
