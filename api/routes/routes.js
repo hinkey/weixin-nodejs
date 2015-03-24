@@ -1,4 +1,5 @@
 var wechat = require('wechat');
+var employees = require('../config/employees');
 var config = {
     token: 'PKTaj8f9gNrM',
     appid: 'wxc671906008c8ab8a',
