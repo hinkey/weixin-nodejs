@@ -1,0 +1,2 @@
+# weixin-nodejs
+npm install
