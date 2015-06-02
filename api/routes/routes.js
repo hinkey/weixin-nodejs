@@ -11,21 +11,26 @@ module.exports = function (app) {
         // 微信输入信息都在req.weixin上
         var message = req.weixin;
         if (message.Content === 'whoami') {
-            res.reply('你是猪');
+            //res.reply('你是猪');
+            res.reply([
+                {
+                    title: '推荐的维修厂',
+                    description: '里面有具体的说明',
+                    picurl: 'http://img4.duitang.com/uploads/item/201207/03/20120703100424_meX8s.jpeg',
+                    url: 'http://yuntu.amap.com/share/VFBN7j'
+                }
+            ]);
         }
-        else if (message.Content === 'whoareyou') {
-            res.reply('我是神，联系地址：我问问大地');
+        else if (message.EventKey === 'messagebord') {
+            res.reply('此功能正在开发中。。。');
         }
         else if (message.Content === '1') {
             // 回复屌丝(普通回复)
-            res.reply('1个毛');
+            res.reply('厂家1，2，3');
         }
         else if (message.Content === '2') {
             //你也可以这样回复text类型的信息
-            res.reply({
-                content: 'text object',
-                type: '挺2'
-            });
+            res.reply('用户的回复用什么形式呢？');
         }
         else if (message.Content === '3') {
             // 回复一段音乐
@@ -39,15 +44,7 @@ module.exports = function (app) {
             ]);
         }
         else {
-            // 回复高富帅(图文回复)
-            res.reply([
-                {
-                    title: '你来我ww',
-                    description: '这是女神与高富帅之间的对话',
-                    picurl: 'http://img4.duitang.com/uploads/item/201207/03/20120703100424_meX8s.jpeg',
-                    url: 'http://weibo.com/4337365'
-                }
-            ]);
+            res.reply('欢迎关注本微信，本微信公众平台专注修车客户,菜单里可以看修车厂地图demo,请允许访问定位提示，回复1查看维修厂家，回复2查看用户评价。不知道消费者回复你要什么效果的。');
         }
     }));
     app.get('/employees', employees.findAll);

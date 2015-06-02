@@ -15,7 +15,7 @@ var routes = require('./api/routes/routes');
 var weixin = require('./api/weixin/demo');
 var app = express();
 // all environments
-app.set('port', process.env.PORT || 8000);
+app.set('port', process.env.PORT || 80);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('.html', ejs.__express);
 app.set('view engine', 'html');
@@ -27,7 +27,7 @@ app.use(express.multipart());
 app.use(express.methodOverride());
 app.use(express.cookieParser());
 app.use(express.session({secret: "keyboard cat", secureProxy: false}));
-app.use(express.static(path.join(__dirname, 'www')));
+app.use(express.static(path.join(__dirname, 'weixin')));
 app.use(express.query());
 app.use(app.router);
 // development only
