@@ -21,8 +21,14 @@ module.exports = function (app) {
                 }
             ]);
         }
-        else if (message.EventKey === 'messagebord') {
-            res.reply('此功能正在开发中。。。');
+        else if (message.EventKey === 'bybaike') {
+            res.reply('保养百科正在开发中。。。');
+        }
+        else if (message.EventKey === 'bychangshi') {
+            res.reply('保养常识正在开发中。。。');
+        }
+        else if (message.EventKey === 'brand') {
+            res.reply('品牌大全正在开发中。。。');
         }
         else if (message.Content === '1') {
             // 回复屌丝(普通回复)
