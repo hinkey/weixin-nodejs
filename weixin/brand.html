@@ -1,0 +1,188 @@
+
+<script>document.write('<div id="loading">正在加载<\/div>');</script>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="telephone=no" name="format-detection" />
+    <style>
+        #loading {z-index:1;padding:5px 0 5px 9px;background:#c44;left:0;top:0;width:90px;color:#fff;position:fixed}
+    </style>
+    <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    <script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+    <script src="jquery-mobile/jquery.lazyload.js" type="text/javascript"></script>
+    <script src="jquery-mobile/jquery.masonry.js" type="text/javascript"></script>
+    <script src="jquery-mobile/jquery.infinitescroll.js" type="text/javascript"></script>
+</head>
+<title>品牌大全</title>
+<body>
+
+<!---->
+<div class="Search clears col_1">
+    <span class="ext_1"><a class="clears">保养配件</a></span>
+    <div class="exp" style="display: none; clear:both">
+        <ul class="child">
+            <li><i></i><a href="/brand.html">机油 </a> </li>
+            <li><i></i><a href="/brand.html">滤清器类 </a> </li>
+            <li><i></i><a href="/brand.html">火花塞 </a> </li>
+            <li><i></i><a href="/brand.html">刹车油 </a> </li>
+            <li><i></i><a href="/brand.html">变速箱油 </a> </li>
+            <li><i></i><a href="/brand.html">防冻液 </a> </li>
+            <li><i></i><a href="/brand.html">转向助力液 </a> </li>
+            <li><i></i><a href="/brand.html">差速器油 </a> </li>
+            <li><i></i><a href="/brand.html">皮带 </a> </li>
+            <li><i></i><a href="/brand.html">雨刷 </a> </li>
+            <li><i></i><a href="/brand.html">玻璃水 </a> </li>
+            <li><i></i><a href="/brand.html">燃油添加剂 </a> </li>
+            <li><i></i><a href="/brand.html">机油添加剂 </a> </li>
+            <li><i></i><a href="/brand.html">轮胎 </a> </li>
+            <li><i></i><a href="/brand.html">轮毂 </a> </li>
+            <li><i></i><a href="/brand.html">刹车片 </a> </li>
+            <li><i></i><a href="/brand.html">刹车盘 </a> </li>
+            <li><i></i><a href="/brand.html">蓄电池 </a> </li>
+            <li><i></i><a href="/brand.html">车灯 </a> </li>
+            <li><i></i><a href="/brand.html">零件清洗剂 </a> </li>
+        </ul>
+    </div>
+    <span class="ext_1"><a class="clears">车载电器</a></span>
+    <div class="exp" style="display: none; clear:both">
+        <ul class="child">
+            <li><i></i><a href="/brand.html">导航 </a> </li>
+            <li><i></i><a href="/brand.html">电子狗 </a> </li>
+            <li><i></i><a href="/brand.html">行车记录仪 </a> </li>
+            <li><i></i><a href="/brand.html">汽车音响 </a> </li>
+            <li><i></i><a href="/brand.html">倒车影像 </a> </li>
+            <li><i></i><a href="/brand.html">倒车雷达 </a> </li>
+            <li><i></i><a href="/brand.html">吸尘器 </a> </li>
+            <li><i></i><a href="/brand.html">车用净化器 </a> </li>
+            <li><i></i><a href="/brand.html">车载冰箱 </a> </li>
+            <li><i></i><a href="/brand.html">车载电源 </a> </li>
+            <li><i></i><a href="/brand.html">HUD抬头显示仪 </a> </li>
+        </ul>
+    </div>
+    <span class="ext_1"><a class="clears">美容装饰</a></span>
+    <div class="exp" style="display: none; clear:both">
+        <ul class="child">
+            <li><i></i><a href="/brand.html">贴膜 </a> </li>
+            <li><i></i><a href="/brand.html">镀膜 </a> </li>
+            <li><i></i><a href="/brand.html">车蜡 </a> </li>
+            <li><i></i><a href="/brand.html">底盘装甲 </a> </li>
+            <li><i></i><a href="/brand.html">迎宾踏板 </a> </li>
+            <li><i></i><a href="/brand.html">补漆笔 </a> </li>
+            <li><i></i><a href="/brand.html">车用清洁剂 </a> </li>
+            <li><i></i><a href="/brand.html">脚垫 </a> </li>
+            <li><i></i><a href="/brand.html">座垫 </a> </li>
+            <li><i></i><a href="/brand.html">座套 </a> </li>
+            <li><i></i><a href="/brand.html">头枕腰靠 </a> </li>
+            <li><i></i><a href="/brand.html">车内香水 </a> </li>
+            <li><i></i><a href="/brand.html">防刮条 </a> </li>
+            <li><i></i><a href="/brand.html">遮阳挡 </a> </li>
+            <li><i></i><a href="/brand.html">储物收纳 </a> </li>
+            <li><i></i><a href="/brand.html">洗车机械 </a> </li>
+            <li><i></i><a href="/brand.html">洗车布 </a> </li>
+            <li><i></i><a href="/brand.html">车衣 </a> </li>
+            <li><i></i><a href="/brand.html">雨档 </a> </li>
+        </ul>
+    </div>
+    <span class="ext_1"><a class="clears">汽车服务</a></span>
+    <div class="exp" style="display: none; clear:both">
+        <ul class="child">
+            <li><i></i><a href="/brand.html">快修连锁 </a> </li>
+            <li><i></i><a href="/brand.html">洗车美容 </a> </li>
+            <li><i></i><a href="/brand.html">品牌改装 </a> </li>
+            <li><i></i><a href="/brand.html">网站媒体 </a> </li>
+            <li><i></i><a href="/brand.html">报刊杂志 </a> </li>
+        </ul>
+    </div>
+    <span class="ext_1"><a class="clears">安全自驾</a></span>
+    <div class="exp" style="display: none; clear:both">
+        <ul class="child">
+            <li><i></i><a href="/brand.html">儿童座椅 </a> </li>
+            <li><i></i><a href="/brand.html">胎压充气 </a> </li>
+            <li><i></i><a href="/brand.html">汽修工具 </a> </li>
+            <li><i></i><a href="/brand.html">绞盘 </a> </li>
+            <li><i></i><a href="/brand.html">千斤顶 </a> </li>
+            <li><i></i><a href="/brand.html">灭火器 </a> </li>
+            <li><i></i><a href="/brand.html">GPS防盗器 </a> </li>
+            <li><i></i><a href="/brand.html">轮胎防滑链 </a> </li>
+        </ul>
+    </div>
+    <span class="ext_1"><a class="clears">汽车品牌</a></span>
+    <div class="exp" style="display: none; clear:both">
+        <ul class="child">
+            <!--li><i></i><a href="#">品牌大全</a></li-->
+            <li><i></i><a href="/brand.html">厂商介绍</a></li>
+        </ul>
+    </div>
+    </ul>
+</div>
+
+
+
+
+</div>
+<!---->
+
+
+<script type="text/javascript">
+    $(function  () {
+        $(".ext_1").click(function  () {
+            if ($(this).next().is(":visible")) {
+                $(this).next().slideUp(200);
+            } else{
+                $(this).next().slideDown(200).siblings(".exp").slideUp(200);
+            }
+        })
+
+    })
+</script>
+<script type="text/javascript" src="./app_statics/js/jquery.masonry.js"></script>
+<script type="text/javascript" src="./app_statics/js/jquery.infinitescroll.js"></script>
+<script type="text/javascript">
+    var sp = 1;
+    var ep = 8414;
+    $("#infinite_scroll").infinitescroll({
+        navSelector: "#p_more",
+        nextSelector: "#p_more a",
+        itemSelector: "#article-content",
+
+        loading:{
+            img: "/bcb_statics/img/loading.gif",
+            msgText: ' ',
+            finishedMsg: '哎呀，已经拉到最后啦~ ╮(╯_╰)╭',
+            finished: function(){
+                sp++;
+                if(sp>=ep){ //到第7页结束事件
+                    $("#p_more").remove();
+                    $("#page").show();
+                    $(window).unbind('.infscr');
+                }
+                $("#infscr-loading").hide();
+            }
+        },errorCallback:function(){
+            $("#page").show();
+        }
+    },function(newElements){
+        var $newElems = $(newElements);
+        $newElems.fadeIn();
+        return;
+    });
+</script>
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-52490769-4', 'auto');
+    ga('send', 'pageview');
+</script>
+<script>document.write('<style>#loading{display:none}<\/style>');</script>
+</body>
+</html>
